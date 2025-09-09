@@ -3,6 +3,18 @@
 Sistem Arsip Surat adalah aplikasi berbasis web untuk **mengelola dokumen dan surat** secara digital.  
 Dikembangkan menggunakan **Laravel + Inertia.js + React + TailwindCSS**, sistem ini memudahkan pengguna dalam menyimpan, mengelompokkan, mencari, dan mengunduh dokumen dengan cepat.
 
+---
+
+## 🎯 Tujuan
+
+-   Meningkatkan efisiensi dalam pengelolaan arsip surat secara digital.
+-   Meminimalisir risiko kehilangan dokumen penting.
+-   Mempermudah pencarian dan pengelompokan dokumen berdasarkan kategori.
+-   Memberikan akses yang terkontrol melalui manajemen pengguna dan role.
+-   Menyediakan dashboard interaktif untuk monitoring aktivitas dan data arsip.
+
+---
+
 ## ✨ Fitur
 
 -   🔐 **Autentikasi & Role User**
