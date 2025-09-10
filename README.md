@@ -22,6 +22,12 @@ Dikembangkan menggunakan **Laravel + Inertia.js + React + TailwindCSS**, sistem 
     -   Login & Logout
     -   Role-based Access Control (Super Admin, Admin)
 
+-   📊 **Dashboard**
+
+    -   Statistik jumlah user, kategori, dokumen
+    -   Grafik Jumlah Dokumen per Kategori (Bar Chart)
+    -   Grafik Jumlah Dokumen pert Kategori per Bulan dynamic year (Stacked Bar Chart)
+
 -   👥 **Manajemen Data Pengguna**
 
     -   Tambah, ubah, hapus pengguna (user) dengan role
@@ -38,13 +44,6 @@ Dikembangkan menggunakan **Laravel + Inertia.js + React + TailwindCSS**, sistem 
     -   Unduh dokumen (download)
     -   Pencarian dokumen berdasarkan judul, kategori, atau nomor dokumen
     -   Tampilan tabel dokumen responsif
-
-<!-- -   📊 **Dashboard**
-
-    -   Statistik jumlah user, kategori, dokumen
-    -   Riwayat aktivitas (audit trail)
-    -   Low stock alert (jika diintegrasikan dengan warehouse)
-    -   Grafik menggunakan ApexCharts (Pie, Donut, Bar Chart) -->
 
 -   👤 **Halaman Tentang (About)**
     -   Informasi pembuat aplikasi
@@ -66,16 +65,17 @@ Dikembangkan menggunakan **Laravel + Inertia.js + React + TailwindCSS**, sistem 
 ---
 
 -   **Halaman Login**  
-    ![Landing Page](public/documentation/login_doc.png)
-
+    ![Halaman Login](public/documentation/login_doc.png)
+-   **Dashboard**  
+    ![Dashboard](public/documentation/dashboard_doc.png)
 -   **Kelola Data Pengguna**  
-    ![Dashboard](public/documentation/users_doc.png)
+    ![Kelola Data Pengguna](public/documentation/users_doc.png)
 -   **Arsip Surat**  
-    ![Dashboard](public/documentation/archive_doc.png)
+    ![Arsip Surat](public/documentation/archive_doc.png)
 -   **Kategori Surat**  
-    ![Dashboard](public/documentation/category_doc.png)
+    ![Kategori Surat](public/documentation/category_doc.png)
 -   **About**  
-    ![Dashboard](public/documentation/about_doc.png)
+    ![About](public/documentation/about_doc.png)
 
 ## Teknologi yang Digunakan
 
@@ -86,7 +86,8 @@ Dikembangkan menggunakan **Laravel + Inertia.js + React + TailwindCSS**, sistem 
 -   **Role Management**: Laravel Spatie
 -   **CSS Framework**: Tailwind CSS
 -   **Library Component**: Radix-UI
-<!-- -   **Chart**: ApexCharts.js  -->
+-   **Chart**: ApexCharts.js
+-   **Icon**: Iconify JS
 
 ## Instalasi
 

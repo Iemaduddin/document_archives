@@ -25,10 +25,10 @@ return Application::configure(basePath: dirname(__DIR__))
         //
     })
     ->withExceptions(function (Exceptions $exceptions): void {
-        $exceptions->render(function (Throwable $e, $request) {
-            return inertia('ErrorPage', [
-                'status' => $e instanceof NotFoundHttpException ? 404 : 500,
-                'message' => $e->getMessage() ?: 'Terjadi kesalahan',
-            ])->toResponse($request);
-        });
+        // $exceptions->render(function (Throwable $e, $request) {
+        //     return inertia('ErrorPage', [
+        //         'status' => $e instanceof NotFoundHttpException ? 404 : 500,
+        //         'message' => $e->getMessage() ?: 'Terjadi kesalahan',
+        //     ])->toResponse($request);
+        // });
     })->create();

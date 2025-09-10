@@ -16,11 +16,14 @@ Route::get('/', function () {
 
 Route::middleware('auth')->group(function () {
     Route::middleware('role:Super Admin')->group(function () {
-        Route::get('/dashboard', function () {
-            return Inertia::render('Dashboard');
-        })->name('dashboard');
         Route::resource('users', \App\Http\Controllers\UserController::class);
     });
+    // Dasboard
+    Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+    // Get Data Document per Category per month filter year for Chart
+    Route::get('/dashboard/documents/{year}', [\App\Http\Controllers\DashboardController::class, 'documentsPerMonth'])
+        ->name('dashboard.documents');
+
     Route::resource('categories', \App\Http\Controllers\CategoryController::class);
     Route::resource('documents', \App\Http\Controllers\DocumentController::class);
     Route::get('/documents/download/{document}', [\App\Http\Controllers\DocumentController::class, 'download'])

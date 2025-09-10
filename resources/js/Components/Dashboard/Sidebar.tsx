@@ -5,12 +5,12 @@ import { is } from "zod/locales";
 import { Button } from "@radix-ui/themes";
 
 const menuItems = [
-    // {
-    //     name: "Dashboard",
-    //     href: "/dashboard",
-    //     role: ["Super Admin"],
-    //     icon: "mdi:view-dashboard-outline",
-    // },
+    {
+        name: "Dashboard",
+        href: "/dashboard",
+        role: ["Super Admin", "Admin"],
+        icon: "mdi:view-dashboard-outline",
+    },
     {
         name: "Kelola Akun Pengguna",
         href: "/users",
@@ -26,7 +26,7 @@ const menuItems = [
     {
         name: "Kategori Surat",
         href: "/categories",
-        role: ["Super Admin"],
+        role: ["Super Admin", "Admin"],
         icon: "mdi:shape-outline",
     },
     {
